@@ -1,9 +1,9 @@
 {
-  "name":        "url-shortener",
-  "version":     "0.0.1",
+  "name":        "size-matters",
+  "version":     "0.0.5",
   "author":      "Brad Osgood",
-  "keywords":    "",
-  "description": "",
+  "keywords":    "url shortening, ",
+  "description": "A simple URL shortener service based on Node and MongoLab",
   
   "engines": {
       "node": "0.6.14",
@@ -22,8 +22,8 @@
 
   "dependencies": {
     "express": "3.0.3",
-    "underscore": "latest",
     "path": "latest",
-    "mongodb": "latest"
+    "mongojs": "latest",
+    "node-uuid": "latest"
   }
 }
