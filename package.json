@@ -1,0 +1,29 @@
+{
+  "name":        "url-shortener",
+  "version":     "0.0.1",
+  "author":      "Brad Osgood",
+  "keywords":    "",
+  "description": "",
+  
+  "engines": {
+      "node": "0.6.14",
+      "npm":  "1.1.9"
+    },
+  
+  "licenses":     [{
+    "type":       "MIT",
+    "url":        ""
+  }],
+
+  "repository" : {
+    "type" : "git",
+    "url" : ""
+  },
+
+  "dependencies": {
+    "express": "3.0.3",
+    "underscore": "latest",
+    "path": "latest",
+    "mongodb": "latest"
+  }
+}
