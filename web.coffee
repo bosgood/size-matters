@@ -2,7 +2,6 @@ path    = require 'path'
 express = require 'express'
 http    = require 'http'
 routes  = require './routes'
-create = require './routes/create'
 
 cfg =
     port: 8081
@@ -26,6 +25,7 @@ app.configure 'development', () ->
 any_string = /^(.*?)$/
 app.get any_string, routes.index
 app.post any_string, routes.create
+
 
 http.createServer(app).listen(app.get('port'), () ->
   console.log("Express server listening on port #{app.get('port')}")
