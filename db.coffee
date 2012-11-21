@@ -6,7 +6,7 @@ Date: Nov 21 2012
 License: MIT
 ###
 
-secrets = require 'secrets'
+secrets = require './secrets'
 
 getDb = () ->
     require('mongojs').connect(secrets.databaseUrl, ['urls'])

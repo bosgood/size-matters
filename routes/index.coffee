@@ -57,7 +57,7 @@ dump = (req, resp) ->
     db.urls.find (err, urls) ->
         respContent = 'found urls:<ul>'
         for url in urls
-            respContent += "<li>url: target=#{url.fullUrl} shortened=#{url.shortUrl}</li>"
+            respContent += "<li>shortUrl=#{url.shortUrl} => fullUrl=#{url.fullUrl}</li>"
         respContent += "</ul>"
         resp.send(respContent)
 
